@@ -1,4 +1,4 @@
-# bosch_ASDIIE
+# bosch_ASDIIE TSzBF
 This repository is for student work at the class of Agile Software Development in Industrial Environment.
 
 The course is at Budapest University of Technology and Economics and is hosted by Robert Bosch Kft.

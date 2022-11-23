@@ -18,8 +18,9 @@ and running them
 """
 
 import os
+from pathlib import Path
 
-def GetCommads(sourceFile: str) -> list[str]:
+def GetCommads(source_file_path: str) -> list[str]:
     """
     Function reading the preaperd commands from file
 
@@ -28,8 +29,14 @@ def GetCommads(sourceFile: str) -> list[str]:
     @return:
         commands [list(str)] - The list of runnable commands
     """
-    source = open(sourceFile, 'r')
+
     result = []
+
+    # create file if not exists, and open for reading
+    source_file = Path(source_file_path)
+    source_file.touch(exist_ok=True)
+    source = open(source_file, 'r')
+    
     while True:
             line = source.readline()
 
@@ -37,6 +44,7 @@ def GetCommads(sourceFile: str) -> list[str]:
             if not line:
                 break
 
+            # delete '\n' charackter from end of line
             if line[-1] == '\n':
                 result.append(line[:-1])
             else:

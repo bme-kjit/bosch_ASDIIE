@@ -1,4 +1,4 @@
-# using minimal 
+# create as base image
 FROM scratch
 
 # install python3 & python3-pip

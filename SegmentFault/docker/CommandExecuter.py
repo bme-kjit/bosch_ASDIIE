@@ -37,10 +37,10 @@ def GetCommads(sourceFile: str) -> list[str]:
             if not line:
                 break
 
-            if list(line)[-1] == '\n':
-                result.append(list(line)[:-1])
+            if line[-1] == '\n':
+                result.append(line[:-1])
             else:
-                result.append(list(line))
+                result.append(line)
 
     source.close()
     return result
@@ -54,7 +54,8 @@ def RunCommands(commands: list[str]) -> None:
         commands [list(str)] - The list of runnable commands
     """
     for cmd in commands:
-        os.system(cmd)
+        #print(cmd)
+        os.system(str(cmd))
 
 
 if __name__ == "__main__":

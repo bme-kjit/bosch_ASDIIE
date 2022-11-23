@@ -53,8 +53,9 @@ def RunCommands(commands: list[str]) -> None:
     @args:
         commands [list(str)] - The list of runnable commands
     """
+
     for cmd in commands:
-        #print(cmd)
+        print(cmd)
         os.system(str(cmd))
 
 

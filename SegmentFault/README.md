@@ -82,27 +82,27 @@ Make a script for creating a docker container for the game
 
 To run all unit tests named "test_ModuleName.py":
 ```
-$ cd ../SegmentFault/test
+$ cd ../SegmentFault
 $ python3 -m unittest discover
 ```
 
 
 To run single unit test modules or cases:
 ```
-$ cd ../SegmentFault/test
-$ python3 -m unittest <parent_directory>.<testmodule_name>.<testcase_name>
+$ cd ../SegmentFault
+$ python3 -m unittest <path_to_testmodul>.<testmodule_name>.<testcase_name>
 ```
 
 ## :whale: Docker container
 
-Use the following commands to create the container
+Use the following commands to build the image
 ```
 $ cd ../SegmentFault/docker
 $ python3 CommandExecuter.py
 ```
 
 **Command Executer:**
-This script is execetuing CLI commands listed in the "commands.txt". The commands in "commands.txt" must be in separeted lines, with no separation character. Use this script to write your CLI rutines and automate command line base processes.
+This script is execetuing CLI commands listed in the "commands.txt". The commands in "commands.txt" must be in separeted lines, with no other separation character included. Use this script to write your CLI rutines and automate command line processes.
 
 ## :muscle: Collaborators
   

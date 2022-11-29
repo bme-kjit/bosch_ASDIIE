@@ -73,6 +73,8 @@ Make a script for creating a docker container for the game
 - [X] Copy the requirements.txt file into the container
 - [ ] Install the contents of the file with pip
 - [ ] List installed packages
+- [ ] Copy Source code to image
+- [ ] Radon install and run
 
 </details>
 

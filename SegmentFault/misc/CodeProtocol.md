@@ -5,25 +5,30 @@ Git commit message format
 
 	TAG: filemane.extension - message
 
-      TAG: ADD; CHD; RMV
+      TAG: ADD; CHG; RMV
 	
 ______________________________
 
 Names
 
 	- classes:
-		every first letter is capital, no spaces
+		every first letter is capital, no spaces [CamelCase]
         (FirstClass)
     
 	- variables, functions:
 		everithing is lowcase, space = _
         (my_variable, some_function)
+	
+	- interfaces:
+		same as class naming but begins with capital "I"
+	(IFirstClass)
 
 ______________________________
 
 Files
 
 	One file holds only one class. (there can be some exceptions: Enums, ...)
+	Filename is the same as the implemented class.
   
 	The header of every file:
 

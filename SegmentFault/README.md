@@ -6,6 +6,11 @@ This repository is for student work at the class of **Agile Software Development
 
 This project is develped by a group of four students, as an assignment for the class.
 
+
+```
+git clone https://github.com/markbozsoki/bosch_ASDIIE.git
+```
+
 ## :mortar_board: About the game
 
 Pac-Man is an action maze chase video game.
@@ -22,10 +27,10 @@ The player controls the eponymous character through an enclosed maze. The object
 
 | Action | Key | Alias |
 | :---: | :---: | :---: |
-| Up | W | 0 |
-| Right | D | 1 |
+| Up | W | 5 |
+| Right | D | 3 |
 | Down | S | 2 |
-| Left | A | 3 |
+| Left | A | 1 |
 
 ---
 
@@ -49,6 +54,32 @@ Every words listed in the Commands table are valid command. Except "Commands", "
 - [x] Game terminates after a given timesteps
 
 </details>
+
+<details><summary><h3> Phase 2 </h3></summary>
+
+- [x] Implement wall features on the sides
+- [x] Extend to in-map walls (walls inside the map)
+- [x] Game Over feature (hits wall = die)
+- [ ] Implement 3 unit tests
+
+</details>
+
+## :toolbox: Testing
+
+**Use the unittest command line interface to run tests**
+
+To run all unit tests named "test_ModuleName.py":
+```
+$ cd ../SegmentFault/test
+$ python3 -m unittest discover
+```
+
+
+To run single unit test modules or cases:
+```
+$ cd ../SegmentFault/test
+$ python3 -m unittest <parent_directory>.<testmodule_name>.<testcase_name>
+```
 
 ## :muscle: Collaborators
   

@@ -19,13 +19,15 @@ import time
 import threading
 
 class TimeCounter(threading.Thread):
-    """ inherits from python thread class
+    """
+    inherits from python thread class
     
     @args:
         threading.Thread
     """
-    def __init__(self, *args, **kwargs):
-        """ Inits the timer variables
+    def __init__(self, timelimit, *args, **kwargs):
+        """
+        Inits the timer variables
         
         @args:
             self,
@@ -38,10 +40,13 @@ class TimeCounter(threading.Thread):
         self._running = threading.Event()  # stop thread identification
         self._running.set()  # set running to True
         self._seconds_passed = 0  # value to track passed seconds
+        self.TimeoutLimit = timelimit
+        self.IsFirstRun = True
 
 
     def run(self):
-        """ Starts the Timer Thread, increase the value of _seconds_passed by 1 in each iteration (-> 1s passed)
+        """
+        Starts the Timer Thread, increase the value of _seconds_passed by 1 in each iteration (-> 1s passed)
         
         @args:
             self
@@ -53,7 +58,8 @@ class TimeCounter(threading.Thread):
 
 
     def pause(self):
-        """ Pauses the timer by blocking the Thread
+        """
+        Pauses the timer by blocking the Thread
         
         @args:
             self
@@ -62,7 +68,8 @@ class TimeCounter(threading.Thread):
 
 
     def resume(self):
-        """ Resumes the timer by stop blocking  the Thread
+        """
+        Resumes the timer by stop blocking  the Thread
         
         @args:
             self
@@ -71,7 +78,8 @@ class TimeCounter(threading.Thread):
 
 
     def stop(self):
-        """ Stops the timer
+        """
+        Stops the timer
 
         @args:
             self
@@ -82,14 +90,46 @@ class TimeCounter(threading.Thread):
 
 
     def reset(self):
-        """ Resets the _seconds_passed variable
+        """
+        Resets the _seconds_passed variable
 
         @args:
             self
         """
         self._seconds_passed = 0
 
+    def StartStopperAdvanced(self):
+        """
+        Starts the timer thread considering, wether it is the first start for it
+        or not based on IsFirstRun constant
+
+        @args:
+                self
+        @return:
+                -
+        """
+
+        if self.IsFirstRun == False:
+            self.reset()
+        if self.IsFirstRun == True:
+            self.IsFirstRun = False
+            self.start()
 
     @property
     def seconds_passed(self):
         return self._seconds_passed
+
+    def is_timeout(self) -> bool:
+        """
+        Determines if the timelimit for the game is passed or not
+
+        @args:
+                self
+        @return:
+            True, if the given timelimit in secunds is up
+        """
+        if self.seconds_passed >= self.TimeoutLimit:
+            print(f"You have reached the:  {self.TimeoutLimit} s time limit")
+            return True
+        else:
+            False

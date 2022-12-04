@@ -1,0 +1,100 @@
+core\game.py
+    C 8:0 Game - A (3)
+    M 28:4 Game.run - A (3)
+    M 10:4 Game.__init__ - A (1)
+core\pacman_game_state.py
+    M 20:4 PacmanGameState.step - B (9)
+    C 10:0 PacmanGameState - A (4)
+    M 47:4 PacmanGameState.take_action - A (3)
+    M 12:4 PacmanGameState.__init__ - A (1)
+    M 40:4 PacmanGameState.is_terminated - A (1)
+core\display\object_markers.py
+    C 4:0 ObjectMarkers - A (1)
+core\display\screen.py
+    C 4:0 Screen - A (2)
+    M 5:4 Screen.__init__ - A (1)
+    M 8:4 Screen.__getattr__ - A (1)
+core\display\visualizer.py
+    C 6:0 Visualizer - A (3)
+    M 18:4 Visualizer.render - A (2)
+    M 7:4 Visualizer.__init__ - A (1)
+core\game_element\defeat_checker.py
+    C 7:0 DefeatChecker - A (3)
+    M 26:4 DefeatChecker.tick - A (3)
+    M 9:4 DefeatChecker.__init__ - A (1)
+    M 21:4 DefeatChecker.take_action - A (1)
+core\game_element\ghosts.py
+    M 47:4 Ghosts.__take_best_action__ - C (11)
+    C 15:0 Ghosts - A (4)
+    M 19:4 Ghosts.__init__ - A (4)
+    M 84:4 Ghosts.take_action - A (3)
+    M 75:4 Ghosts.__take_random_action__ - A (1)
+    M 96:4 Ghosts.tick - A (1)
+    M 106:4 Ghosts.draw - A (1)
+core\game_element\pacman.py
+    M 15:4 Pacman.__init__ - A (5)
+    C 13:0 Pacman - A (3)
+    M 41:4 Pacman.take_action - A (1)
+    M 49:4 Pacman.get_pacman_position - A (1)
+    M 56:4 Pacman.tick - A (1)
+    M 64:4 Pacman.draw - A (1)
+core\game_element\pellets.py
+    M 14:4 Pellets.__init__ - A (4)
+    C 12:0 Pellets - A (3)
+    M 34:4 Pellets.take_action - A (1)
+    M 41:4 Pellets.tick - A (1)
+    M 47:4 Pellets.draw - A (1)
+core\game_element\score_counter.py
+    C 7:0 ScoreCounter - A (3)
+    M 31:4 ScoreCounter.tick - A (3)
+    M 9:4 ScoreCounter.__init__ - A (1)
+    M 28:4 ScoreCounter.take_action - A (1)
+core\game_element\walls.py
+    M 13:4 Walls.__init__ - A (5)
+    C 11:0 Walls - A (3)
+    M 59:4 Walls.generate_pos - A (3)
+    M 76:4 Walls.append_internal_pos - A (3)
+    M 40:4 Walls.tick - A (2)
+    M 34:4 Walls.take_action - A (1)
+    M 50:4 Walls.draw - A (1)
+core\interface\canvas.py
+    C 7:0 Canvas - A (2)
+    M 9:4 Canvas.draw_dots - A (1)
+    M 19:4 Canvas.render - A (1)
+    M 27:4 Canvas.clear - A (1)
+    M 35:4 Canvas.get_height - A (1)
+    M 43:4 Canvas.get_width - A (1)
+core\interface\game_element.py
+    C 6:0 GameElement - A (2)
+    M 8:4 GameElement.take_action - A (1)
+    M 17:4 GameElement.tick - A (1)
+core\interface\visualizable.py
+    C 6:0 Visualizable - A (2)
+    M 8:4 Visualizable.draw - A (1)
+core\key_interaction\key_event.py
+    C 4:0 KeyEvent - A (1)
+core\key_interaction\key_listener.py
+    M 57:4 KeyListener.read_last_key_event - B (6)
+    M 16:4 KeyListener.listen - A (4)
+    C 6:0 KeyListener - A (3)
+    M 10:4 KeyListener.__init__ - A (1)
+    M 28:4 KeyListener.stop - A (1)
+    M 39:4 KeyListener.start - A (1)
+    M 50:4 KeyListener.has_happened - A (1)
+core\key_interaction\move.py
+    M 22:4 MovingTransformation.__call__ - B (10)
+    C 7:0 MovingTransformation - B (7)
+    M 9:4 MovingTransformation.__init__ - A (2)
+core\misc\config_loader.py
+    C 9:0 ConfigLoader - A (2)
+    M 32:4 ConfigLoader.get_internal_walls_coordinates - A (2)
+    M 11:4 ConfigLoader.__init__ - A (1)
+    M 18:4 ConfigLoader.load_config - A (1)
+core\misc\custom_argument_parser.py
+    C 4:0 CustomArgParser - A (3)
+    M 9:4 CustomArgParser.get_parsed_config - A (3)
+    M 6:4 CustomArgParser.__init__ - A (1)
+core\misc\pos_generator.py
+    C 7:0 PositionGenerator - A (3)
+    M 20:4 PositionGenerator.generate_pos - A (3)
+    M 9:4 PositionGenerator.__init__ - A (1)

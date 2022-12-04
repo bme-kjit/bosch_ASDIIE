@@ -187,7 +187,7 @@ class PacMan:
         :param num (int): number of coins (foods) to create
         :return: None
         """
-        for _ in range(num):
+        while _<range(num):
             coordinates = tuple(np.random.randint(0, self.map_size, (2,)))
             if self.body[0] != coordinates[0] and self.body[1] != coordinates[1]:
                 self.coins.append(coordinates)

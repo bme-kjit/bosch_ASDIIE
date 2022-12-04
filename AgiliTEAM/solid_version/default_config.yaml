@@ -1,0 +1,22 @@
+# MAP parameters
+map_width: 20
+map_height: 20
+internal_walls:
+  - - 4
+    - 5
+  - - 3
+    - 4
+  - - 3
+    - 5
+
+# GAME parameters
+gui: console
+difficulty: 0.5
+
+# PELLET parameters
+num_pellets: 10
+base_score: 10
+
+# GHOST parameters
+num_ghosts: 4
+step_confidence: 0.95

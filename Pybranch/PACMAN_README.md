@@ -8,6 +8,6 @@ Team members:
 - Czeilinger Balázs (Czeilinger96)
 - Kun Ábel (kronos102)
 
-To start the game, simply run the *pacman.py* file that contains both the class and main loop function.
+To start the game, simply run the *run.py* file that contains the main loop function.
 
 The game rules are that of the classic pacman: move with the arrows, avoid walls, collect dots.

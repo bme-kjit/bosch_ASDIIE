@@ -1,0 +1,182 @@
+run.py
+    F 24:0 main - A
+core/visualizable.py
+    C 6:0 Visualizable - A
+    M 8:4 Visualizable.draw - A
+core/key_listener.py
+    M 21:4 KeyListener.listen - A
+    C 6:0 KeyListener - A
+    M 49:4 KeyListener.read_last_key_event - A
+    M 15:4 KeyListener.__init__ - A
+    M 33:4 KeyListener.stop - A
+    M 40:4 KeyListener.start - A
+    M 46:4 KeyListener.has_happened - A
+core/terminate.py
+    C 7:0 Terminate - A
+    M 19:4 Terminate.tick - A
+    M 9:4 Terminate.__init__ - A
+    M 16:4 Terminate.take_action - A
+core/score.py
+    C 7:0 Score - A
+    M 21:4 Score.tick - A
+    M 8:4 Score.__init__ - A
+    M 18:4 Score.take_action - A
+core/game.py
+    C 8:0 Game - A
+    M 25:4 Game.run - A
+    M 15:4 Game.__init__ - A
+core/moving_transformation.py
+    M 13:4 MovingTransformation.__call__ - B
+    C 5:0 MovingTransformation - B
+    M 9:4 MovingTransformation.__init__ - A
+core/wallgenerator.py
+    C 11:0 Wallgenerator - A
+    M 15:4 Wallgenerator.__init__ - A
+    M 24:4 Wallgenerator.make_walls - A
+    M 35:4 Wallgenerator.draw - A
+    M 38:4 Wallgenerator.take_action - A
+    M 41:4 Wallgenerator.tick - A
+core/pellets.py
+    C 11:0 Pellets - A
+    M 15:4 Pellets.__init__ - A
+    M 24:4 Pellets.make_pellets - A
+    M 35:4 Pellets.draw - A
+    M 38:4 Pellets.take_action - A
+    M 41:4 Pellets.tick - A
+core/screen.py
+    C 4:0 Screen - A
+    M 5:4 Screen.__init__ - A
+    M 8:4 Screen.__getattr__ - A
+core/pacman.py
+    M 16:4 Pacman.__init__ - A
+    C 11:0 Pacman - A
+    M 28:4 Pacman.take_action - A
+    M 31:4 Pacman.tick - A
+    M 35:4 Pacman.draw - A
+core/pacman_game_state.py
+    C 7:0 PacmanGameState - A
+    M 15:4 PacmanGameState.step - A
+    M 22:4 PacmanGameState.take_action - A
+    M 11:4 PacmanGameState.__init__ - A
+    M 19:4 PacmanGameState.is_terminated - A
+core/visualizer.py
+    C 7:0 Visualizer - A
+    M 12:4 Visualizer.render - A
+    M 8:4 Visualizer.__init__ - A
+core/canvas.py
+    C 7:0 Canvas - A
+    M 9:4 Canvas.draw_dots - A
+    M 13:4 Canvas.render - A
+    M 17:4 Canvas.clear - A
+    M 21:4 Canvas.get_height - A
+    M 25:4 Canvas.get_width - A
+core/key_event.py
+    C 4:0 KeyEvent - A
+core/game_element.py
+    C 6:0 GameElement - A
+    M 8:4 GameElement.take_action - A
+    M 12:4 GameElement.tick - A
+core/interfaces/visualizable.py
+    C 6:0 Visualizable - A
+    M 8:4 Visualizable.draw - A
+core/interfaces/objects.py
+    C 6:0 Objects - A
+    M 10:4 Objects.make_objects - A
+core/interfaces/canvas.py
+    C 7:0 Canvas - A
+    M 9:4 Canvas.draw_dots - A
+    M 13:4 Canvas.render - A
+    M 17:4 Canvas.clear - A
+    M 21:4 Canvas.get_height - A
+    M 25:4 Canvas.get_width - A
+core/interfaces/game_element.py
+    C 6:0 GameElement - A
+    M 8:4 GameElement.take_action - A
+    M 12:4 GameElement.tick - A
+core/enum/screen.py
+    C 4:0 Screen - A
+    M 8:4 Screen.__init__ - A
+    M 11:4 Screen.__getattr__ - A
+core/enum/key_event.py
+    C 4:0 KeyEvent - A
+core/game_elements/terminate.py
+    C 7:0 Terminate - A
+    M 21:4 Terminate.tick - A
+    M 11:4 Terminate.__init__ - A
+    M 18:4 Terminate.take_action - A
+core/game_elements/score.py
+    M 24:4 Score.tick - A
+    C 7:0 Score - A
+    M 11:4 Score.__init__ - A
+    M 21:4 Score.take_action - A
+    M 38:4 Score.get_score - A
+core/game_elements/wallgenerator.py
+    C 11:0 Wallgenerator - A
+    M 15:4 Wallgenerator.__init__ - A
+    M 24:4 Wallgenerator.make_walls - A
+    M 41:4 Wallgenerator.draw - A
+    M 49:4 Wallgenerator.take_action - A
+    M 52:4 Wallgenerator.tick - A
+core/game_elements/walls.py
+    C 7:0 Walls - A
+    M 11:4 Walls.__init__ - A
+    M 20:4 Walls.draw - A
+core/game_elements/pellets.py
+    C 7:0 Pellets - A
+    M 11:4 Pellets.__init__ - A
+    M 20:4 Pellets.draw - A
+core/game_elements/wall.py
+    C 11:0 Wall - A
+    M 15:4 Wall.__init__ - A
+    M 24:4 Wall.make_walls - A
+    M 41:4 Wall.draw - A
+    M 49:4 Wall.take_action - A
+    M 52:4 Wall.tick - A
+core/game_elements/pacman.py
+    M 15:4 Pacman.__init__ - A
+    C 11:0 Pacman - A
+    M 27:4 Pacman.take_action - A
+    M 35:4 Pacman.tick - A
+    M 43:4 Pacman.draw - A
+core/move/key_listener.py
+    M 24:4 KeyListener.listen - A
+    C 6:0 KeyListener - A
+    M 52:4 KeyListener.read_last_key_event - A
+    M 18:4 KeyListener.__init__ - A
+    M 36:4 KeyListener.stop - A
+    M 43:4 KeyListener.start - A
+    M 49:4 KeyListener.has_happened - A
+core/move/moving_transformation.py
+    M 13:4 MovingTransformation.__call__ - B
+    C 5:0 MovingTransformation - B
+    M 9:4 MovingTransformation.__init__ - A
+core/objects/walls.py
+    C 7:0 Walls - A
+    M 11:4 Walls.__init__ - A
+    M 20:4 Walls.draw - A
+core/objects/pellets.py
+    C 7:0 Pellets - A
+    M 11:4 Pellets.__init__ - A
+    M 20:4 Pellets.draw - A
+core/visualize/visualizer.py
+    C 7:0 Visualizer - A
+    M 15:4 Visualizer.render - A
+    M 11:4 Visualizer.__init__ - A
+gui/console_canvas.py
+    M 32:4 ConsoleCanvas.draw_dots - A
+    C 10:0 ConsoleCanvas - A
+    M 47:4 ConsoleCanvas.render - A
+    M 20:4 ConsoleCanvas.clear - A
+    M 55:4 ConsoleCanvas._get_empty_map - A
+    M 14:4 ConsoleCanvas.__init__ - A
+    M 61:4 ConsoleCanvas.get_height - A
+    M 64:4 ConsoleCanvas.get_width - A
+test/test_pacman_visualization.py
+    F 29:0 testCanvas_whenPacmanMoving_itAppearsOnNewCoordinates - A
+    F 49:0 testCanvas_whenPacmanMoving_thenOppositeKeyEventDoesNotDoAnything - A
+    C 10:0 SpyCanvas - A
+    M 11:4 SpyCanvas.__init__ - A
+    M 16:4 SpyCanvas.dots_on_canvas - A
+    M 19:4 SpyCanvas.draw_dots - A
+    M 23:4 SpyCanvas.clear - A
+    M 26:4 SpyCanvas.render - A

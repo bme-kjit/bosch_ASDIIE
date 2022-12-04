@@ -34,12 +34,14 @@ separator1 = "\n\n\n<-----------Maintainability Index----------->\n\n\n"
 
 #Choose main working dir
 PATH = ""
+#Choose metrics file path
+textfilepath = "docker\\metrics.txt"
 
 Path0 = "\\source\\dynamic_elements\\emergers"
 Path1 = "\\source\\dynamic_elements\\movables"
 Path2 = "\\source\\map"
 Path3 = "\\source\\ui"
-
+Path4 = "\\source"
 
 def WalkDirTree(dir_path):
     # list to store files name
@@ -144,13 +146,17 @@ FilestrCC4 = GetRadonDataComplex(PATH, "", "cc")
 FilestrMI4 = GetRadonDataComplex(PATH, "", "mi")
 #print(Filestr)
 
-FilestrCC = FilestrCC0 + FilestrCC1 + FilestrCC2 + FilestrCC3 + FilestrCC4
-FilestrMI = FilestrMI0 + FilestrMI1 + FilestrMI2 + FilestrMI3 + FilestrMI4
+
+FilestrCC5 = GetRadonDataComplex(PATH,Path4,"cc")
+FilestrMI5 = GetRadonDataComplex(PATH,Path4 ,"mi")
+
+FilestrCC = FilestrCC0 + FilestrCC1 + FilestrCC2 + FilestrCC3 + FilestrCC5 + FilestrCC4
+FilestrMI = FilestrMI0 + FilestrMI1 + FilestrMI2 + FilestrMI3 + FilestrMI5 + FilestrMI4
 #newstrCC = FormatStrN(FilestrCC)
 
 
 Filestr = f"{header}{separator0}{FilestrCC}{separator1}{FilestrMI}"
-filepointer = open("metrics.txt", "w")
+filepointer = open(textfilepath, "w")
 
 filepointer.write(Filestr)
 filepointer.close()

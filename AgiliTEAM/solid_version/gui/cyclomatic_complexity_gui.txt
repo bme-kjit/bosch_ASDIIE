@@ -1,0 +1,9 @@
+gui\console_canvas.py
+    C 10:0 ConsoleCanvas - A (2)
+    M 25:4 ConsoleCanvas.clear - A (2)
+    M 37:4 ConsoleCanvas.draw_dots - A (2)
+    M 47:4 ConsoleCanvas.render - A (2)
+    M 56:4 ConsoleCanvas._get_empty_map - A (2)
+    M 12:4 ConsoleCanvas.__init__ - A (1)
+    M 66:4 ConsoleCanvas.get_height - A (1)
+    M 72:4 ConsoleCanvas.get_width - A (1)

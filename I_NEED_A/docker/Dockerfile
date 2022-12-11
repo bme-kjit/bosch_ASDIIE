@@ -1,3 +1,6 @@
+# build command example:
+# DOCKER_BUILDKIT=1 docker build --file I_NEED_A/docker/Dockerfile --output I_NEED_A/docker .
+
 # base image 
 FROM ubuntu:focal AS stage_build
 

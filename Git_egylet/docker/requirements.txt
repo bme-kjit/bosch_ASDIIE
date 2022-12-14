@@ -1,3 +1,3 @@
-numpy
-argparse
-radon
+numpy==1.23.5
+argparse==1.4.0
+radon==5.1.0

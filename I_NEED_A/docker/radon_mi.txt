@@ -1,0 +1,17 @@
+/I_NEED_A/pacman_solid/pacman_run.py - A
+/I_NEED_A/pacman_solid/Objects/gui/console_canvas.py - A
+/I_NEED_A/pacman_solid/Objects/test/test_pacman_visualization.py - A
+/I_NEED_A/pacman_solid/Objects/test/test_pacman_game_state.py - A
+/I_NEED_A/pacman_solid/Objects/core/canvas.py - A
+/I_NEED_A/pacman_solid/Objects/core/visualizer.py - A
+/I_NEED_A/pacman_solid/Objects/core/screen.py - A
+/I_NEED_A/pacman_solid/Objects/core/foods.py - A
+/I_NEED_A/pacman_solid/Objects/core/visualizable.py - A
+/I_NEED_A/pacman_solid/Objects/core/game_element.py - A
+/I_NEED_A/pacman_solid/Objects/core/step.py - A
+/I_NEED_A/pacman_solid/Objects/core/pacman_game_state.py - A
+/I_NEED_A/pacman_solid/Objects/core/pacman.py - A
+/I_NEED_A/pacman_solid/Objects/core/game.py - A
+/I_NEED_A/pacman_solid/Objects/core/map.py - A
+/I_NEED_A/pacman_solid/Objects/core/get_action.py - A
+/I_NEED_A/pacman_solid/Objects/core/maps/map_descriptior.py - A

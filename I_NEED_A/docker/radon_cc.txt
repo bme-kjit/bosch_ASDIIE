@@ -1,0 +1,105 @@
+/I_NEED_A/pacman_solid/pacman_run.py
+    F 15:0 main - A
+/I_NEED_A/pacman_solid/Objects/gui/console_canvas.py
+    M 56:4 ConsoleCanvas._get_empty_map - A
+    M 48:4 ConsoleCanvas.render - A
+    C 9:0 ConsoleCanvas - A
+    M 23:4 ConsoleCanvas.clear - A
+    M 35:4 ConsoleCanvas.draw_walls - A
+    M 40:4 ConsoleCanvas.draw_foods - A
+    M 45:4 ConsoleCanvas.draw_info - A
+    M 14:4 ConsoleCanvas.__init__ - A
+    M 31:4 ConsoleCanvas.draw_pacman - A
+/I_NEED_A/pacman_solid/Objects/test/test_pacman_visualization.py
+    F 75:0 testCanvas_whenPacman_step_the_scoreIsLowered - A
+    F 48:0 testCanvas_whenPacmanHitTheEndOfCanvas_DoesNotDoAnything - A
+    C 12:0 SpyCanvas - A
+    M 13:4 SpyCanvas.__init__ - A
+    M 19:4 SpyCanvas.pacman_position - A
+    M 23:4 SpyCanvas.pacman_score - A
+    M 26:4 SpyCanvas.draw_pacman - A
+    M 29:4 SpyCanvas.draw_foods - A
+    M 32:4 SpyCanvas.draw_walls - A
+    M 35:4 SpyCanvas.draw_foods - A
+    M 38:4 SpyCanvas.draw_info - A
+    M 42:4 SpyCanvas.clear - A
+    M 45:4 SpyCanvas.render - A
+/I_NEED_A/pacman_solid/Objects/test/test_pacman_game_state.py
+    F 44:0 testPacmanGameState_whenPacmanMovesOneDirectionAfterInit_thenGameStateIsNotTerminated - A
+    F 7:0 test_WhenOneStep_IsTerminatedFalse - A
+    F 26:0 test_whenTakeAction_thenGameElementsGetIt - A
+    F 35:0 testPacmanGameState_whenStep_thenGameElementsTickCalled - A
+    C 14:0 GameElementIsCalledMock - A
+    M 15:4 GameElementIsCalledMock.__init__ - A
+    M 19:4 GameElementIsCalledMock.take_action - A
+    M 22:4 GameElementIsCalledMock.tick - A
+/I_NEED_A/pacman_solid/Objects/core/canvas.py
+    C 6:0 Canvas - A
+    M 8:4 Canvas.draw_pacman - A
+    M 12:4 Canvas.draw_walls - A
+    M 16:4 Canvas.draw_foods - A
+    M 20:4 Canvas.draw_info - A
+    M 24:4 Canvas.render - A
+    M 28:4 Canvas.clear - A
+/I_NEED_A/pacman_solid/Objects/core/visualizer.py
+    C 6:0 Visualizer - A
+    M 13:4 Visualizer.render - A
+    M 7:4 Visualizer.__init__ - A
+/I_NEED_A/pacman_solid/Objects/core/screen.py
+    C 4:0 Screen - A
+    M 9:4 Screen.__init__ - A
+    M 12:4 Screen.__getattr__ - A
+/I_NEED_A/pacman_solid/Objects/core/foods.py
+    C 9:0 Foods - A
+    M 14:4 Foods.__init__ - A
+    M 17:4 Foods.draw - A
+/I_NEED_A/pacman_solid/Objects/core/visualizable.py
+    C 7:0 Visualizable - A
+    M 9:4 Visualizable.draw - A
+/I_NEED_A/pacman_solid/Objects/core/game_element.py
+    C 6:0 GameElement - A
+    M 8:4 GameElement.take_action - A
+    M 12:4 GameElement.tick - A
+/I_NEED_A/pacman_solid/Objects/core/step.py
+    M 24:4 KeyboardListener.listen - A
+    M 52:4 KeyboardListener.read_last_key_event - A
+    C 6:0 KeyboardListener - A
+    M 18:4 KeyboardListener.__init__ - A
+    M 36:4 KeyboardListener.stop - A
+    M 43:4 KeyboardListener.start - A
+    M 49:4 KeyboardListener.has_happened - A
+/I_NEED_A/pacman_solid/Objects/core/pacman_game_state.py
+    M 16:4 PacmanGameState.step - A
+    C 7:0 PacmanGameState - A
+    M 25:4 PacmanGameState.take_action - A
+    M 11:4 PacmanGameState.__init__ - A
+    M 22:4 PacmanGameState.is_terminated - A
+/I_NEED_A/pacman_solid/Objects/core/pacman.py
+    M 19:4 MovingTransformation.__call__ - A
+    M 76:4 Pacman.tick - A
+    M 52:4 Pacman.__init__ - A
+    C 10:0 MovingTransformation - A
+    C 47:0 Pacman - A
+    M 15:4 MovingTransformation.__init__ - A
+    M 36:4 MovingTransformation._wall_limit - A
+    M 73:4 Pacman.take_action - A
+    M 97:4 Pacman.draw - A
+/I_NEED_A/pacman_solid/Objects/core/game.py
+    M 25:4 Game.run - A
+    C 8:0 Game - A
+    M 14:4 Game.__init__ - A
+/I_NEED_A/pacman_solid/Objects/core/map.py
+    M 68:4 MapVariation._get_coordinates_of_objects - A
+    M 25:4 MapVariation._load_map - A
+    M 64:4 MapVariation._indexlist - A
+    M 50:4 MapVariation.ghost_positions - A
+    M 57:4 MapVariation.food_positions - A
+    C 9:0 MapVariation - A
+    M 10:4 MapVariation.__init__ - A
+    M 18:4 MapVariation.get_map - A
+    M 34:4 MapVariation.get_annotation - A
+    M 39:4 MapVariation.pacman_start_position - A
+    M 45:4 MapVariation.wall_positions - A
+    M 77:4 MapVariation._remove_element_from_map - A
+/I_NEED_A/pacman_solid/Objects/core/get_action.py
+    C 4:0 KeyEvent - A

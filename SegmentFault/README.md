@@ -60,7 +60,21 @@ Every words listed in the Commands table are valid command. Except "Commands", "
 - [x] Implement wall features on the sides
 - [x] Extend to in-map walls (walls inside the map)
 - [x] Game Over feature (hits wall = die)
-- [ ] Implement 3 unit tests
+- [X] Implement at least 3 unit tests
+
+</details>
+
+<details><summary><h3> Phase 3 </h3></summary>
+
+Make a script for creating a docker container for the game
+- [ ] Create docker image with Ubuntu
+- [ ] Install python3 and python3-pip
+- [ ] Create a requirements.txt file with the list of the Python packages required
+- [X] Copy the requirements.txt file into the container
+- [ ] Install the contents of the file with pip
+- [ ] List installed packages
+- [ ] Copy Source code to image
+- [ ] Radon install and run
 
 </details>
 
@@ -70,16 +84,27 @@ Every words listed in the Commands table are valid command. Except "Commands", "
 
 To run all unit tests named "test_ModuleName.py":
 ```
-$ cd ../SegmentFault/test
+$ cd ../SegmentFault
 $ python3 -m unittest discover
 ```
 
 
 To run single unit test modules or cases:
 ```
-$ cd ../SegmentFault/test
-$ python3 -m unittest <parent_directory>.<testmodule_name>.<testcase_name>
+$ cd ../SegmentFault
+$ python3 -m unittest <path_to_testmodul>.<testmodule_name>.<testcase_name>
 ```
+
+## :whale: Docker container
+
+Use the following commands to build the image
+```
+$ cd ../SegmentFault/docker
+$ python3 CommandExecuter.py
+```
+
+**Command Executer:**
+This script is execetuing CLI commands listed in the "commands.txt". The commands in "commands.txt" must be in separeted lines, with no other separation character included. Use this script to write your CLI rutines and automate command line processes.
 
 ## :muscle: Collaborators
   

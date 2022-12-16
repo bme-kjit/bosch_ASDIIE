@@ -1,5 +1,5 @@
 import numpy as np
-from bosch_ASDIIE_Namco.Namco.solid_version.constants import MapEnum
+from constants import MapEnum
 
 
 class Map:

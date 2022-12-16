@@ -1,0 +1,31 @@
+solid_version/constants.py
+    C 4:0 ActionEnum - A
+    C 14:0 MapEnum - A
+solid_version/map.py
+    M 85:4 Map.check_interaction - A
+    C 5:0 Map - A
+    M 34:4 Map._create_restricted_areas - A
+    M 63:4 Map.update_map - A
+    M 6:4 Map.__init__ - A
+    M 24:4 Map._create_map_borders - A
+    M 47:4 Map._create_award_slots - A
+    M 54:4 Map._generate_map - A
+solid_version/pac_man.py
+    M 20:4 PacMan.process_action - A
+    C 5:0 PacMan - A
+    M 39:4 PacMan.generate_init_pos - A
+    M 6:4 PacMan.__init__ - A
+    M 48:4 PacMan.position - A
+solid_version/visualizer.py
+    C 6:0 Visualizer - A
+    M 7:4 Visualizer._clear_console - A
+    M 16:4 Visualizer._show_map - A
+    M 35:4 Visualizer._game_over - A
+    M 26:4 Visualizer._show_score - A
+    M 45:4 Visualizer.render - A
+solid_version/game_runner.py
+    M 37:4 GameRunner._step - A
+    C 7:0 GameRunner - A
+    M 24:4 GameRunner.run - A
+    F 65:0 main - A
+    M 8:4 GameRunner.__init__ - A

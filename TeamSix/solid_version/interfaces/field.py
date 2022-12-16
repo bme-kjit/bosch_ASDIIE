@@ -8,6 +8,9 @@ import abc
 
 
 class Field(Steppable, Drawable):
+    """
+    Field abstraction
+    """
     things: list[Interactable]
     neighbors = {
         'DOWN': None,
@@ -30,23 +33,52 @@ class Field(Steppable, Drawable):
         }
 
     def step(self):
+        """
+        Step on this field
+        @return: None
+        """
         for t in self.things:
             t.step()
 
     @abc.abstractmethod
     def accept(self, i: Interactable):
+        """
+        Field accepts an interactable through this method
+        @param i: Interactable instance to accept
+        @return: None
+        """
         pass
 
     @abc.abstractmethod
     def remove(self, i: Interactable):
+        """
+        Remove from field
+        @param i: Interactable intasnce to remove
+        @return: None
+        """
         pass
 
     def get_neighbor(self, d: Direction) -> Field:
+        """
+        Get neighbor in the direction
+        @param d: Direction
+        @return: Neighbor
+        """
         return self.neighbors[d]
 
     def set_neighbor(self, d: Direction, f: Field) -> Field:
+        """
+        Set neighbor in the direction
+        @param d: Direction
+        @param f: Neighbor Field
+        """
         self.neighbors[d] = f
 
     @abc.abstractmethod
     def draw(self, service: DrawingService):
+        """
+        Draw this field
+        @param service: DrawingService
+        @return:
+        """
         pass

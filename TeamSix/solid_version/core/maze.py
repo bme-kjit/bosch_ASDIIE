@@ -7,9 +7,13 @@ from TeamSix.solid_version.enums.constans import Constants
 from TeamSix.solid_version.maze_elements.wall import Wall
 from TeamSix.solid_version.maze_elements.coin_holder import Coin_holder
 from TeamSix.solid_version.maze_elements.coin import Coin
+from TeamSix.solid_version.display.drawingService import DrawingService
 
 
 class Maze(Drawable, Steppable):
+    """
+    Class for the maze
+    """
     def __init__(self) -> None:
         self.fields = list(range(10))
         for f in range(0, len(self.fields)):
@@ -22,6 +26,9 @@ class Maze(Drawable, Steppable):
         return
 
     def init(self):
+        """
+        Creates a maze based a config size
+        """
         # generate outer walls
         for x in range(0, Constants.MAZE_SIZE_X.value):
             self.fields[x][0] = Wall(x, 0)
@@ -48,6 +55,9 @@ class Maze(Drawable, Steppable):
         self.set_neighbors()
 
     def set_neighbors(self):
+        """
+        Connects neighboring fields
+        """
         for x in range(0, Constants.MAZE_SIZE_X.value):
             for y in range(0, Constants.MAZE_SIZE_Y.value):
                 if x > 0:
@@ -60,6 +70,9 @@ class Maze(Drawable, Steppable):
                     self.fields[x][y].neighbors['DOWN'] = self.fields[x][y + 1]
 
     def place_pacman(self, field_x, field_y):
+        """
+        Palces pacman on given coordinates
+        """
         # pacman starting field must be empty
         field = self.fields[field_x][field_y]
         field.things = []
@@ -68,11 +81,17 @@ class Maze(Drawable, Steppable):
         return pacman
 
     def step(self):
+        """
+        Advances the elements in the maze one step
+        """
         for x in self.fields:
             for y in x:
                 y.step()
 
-    def draw(self, service):
+    def draw(self, service: DrawingService):
+        """
+        Draws the maze and its emelements
+        """
         for i in self.fields:
             for j in i:
                 j.draw(service)

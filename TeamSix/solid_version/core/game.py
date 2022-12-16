@@ -8,6 +8,9 @@ import sys
 
 
 class Game:
+    """
+    Class for the game, managing it from start to end
+    """
     def __init__(self):
         self.pacman = None
         self.maze = None
@@ -34,6 +37,9 @@ class Game:
         sleep(5)
 
     def handle_key_events(self):
+        """
+        Key handler
+        """
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_UP:
@@ -46,6 +52,9 @@ class Game:
                     self.pacman.direction = Direction.RIGHT.value
 
     def start_game(self):
+        """
+        Starts the game
+        """
         self.maze = Maze()
         self.maze.init()
         self.pacman = self.maze.place_pacman(1, 1)

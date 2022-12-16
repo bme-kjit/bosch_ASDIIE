@@ -3,6 +3,9 @@ import pygame
 
 
 class Constants(Enum):
+    """
+    Game-wide used constants
+    """
     MAZE_SIZE_X = 10
     MAZE_SIZE_Y = 10
     WINDOW_HEIGHT = 600

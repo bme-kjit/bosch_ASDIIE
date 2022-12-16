@@ -1,0 +1,114 @@
+*****************************************************************************
+Cyclomatic Complexity:
+
+Pybranch/test/map_test.py
+    F 18:0 test_wall - A
+    F 28:0 test_number_of_dots - A
+    F 35:0 test_collision - A
+Pybranch/core/dot_creation.py
+    C 5:0 DotCreation - A
+    M 6:4 DotCreation.__init__ - A
+    M 10:4 DotCreation.dot_creation - A
+Pybranch/core/screen_elements.py
+    C 4:0 Colors - A
+    C 15:0 Font - A
+    M 5:4 Colors.__init__ - A
+    M 16:4 Font.__init__ - A
+Pybranch/core/screen_border_checking.py
+    M 11:4 ScreenBorderChecking.border_checking - A
+    C 4:0 ScreenBorderChecking - A
+    M 6:4 ScreenBorderChecking.__init__ - A
+Pybranch/core/sprite_draw.py
+    C 5:0 SpriteDraw - A
+    M 6:4 SpriteDraw.__init__ - A
+    M 10:4 SpriteDraw.sprite_draw - A
+Pybranch/core/score.py
+    C 4:0 Score - A
+    M 11:4 Score.score_increase - A
+    M 5:4 Score.__init__ - A
+Pybranch/core/dot_sprite.py
+    C 5:0 Dot - A
+    M 6:4 Dot.__init__ - A
+Pybranch/core/game_time.py
+    C 4:0 GameTime - A
+    M 5:4 GameTime.__init__ - A
+    M 11:4 GameTime.game_time_counting - A
+Pybranch/core/border_wall.py
+    C 6:0 BorderWall - A
+    M 7:4 BorderWall.__init__ - A
+    M 18:4 BorderWall.create_wall - A
+Pybranch/core/create_wall.py
+    C 7:0 CreateWall - A
+    M 20:4 CreateWall.create_wall - A
+    M 8:4 CreateWall.__init__ - A
+Pybranch/core/list.py
+    C 3:0 ListToBool - A
+    M 8:4 ListToBool.list_checker - A
+    M 5:4 ListToBool.__init__ - A
+Pybranch/core/surface.py
+    C 4:0 Surface - A
+    M 5:4 Surface.__init__ - A
+Pybranch/core/pacman_sprite.py
+    C 6:0 PacMan - A
+    M 7:4 PacMan.__init__ - A
+Pybranch/core/inner_wall.py
+    C 6:0 InnerWall - A
+    M 7:4 InnerWall.__init__ - A
+    M 12:4 InnerWall.create_wall - A
+Pybranch/core/wall_sprite.py
+    C 5:0 Wall - A
+    M 7:4 Wall.__init__ - A
+Pybranch/core/collide.py
+    C 4:0 Collide - A
+    M 6:4 Collide.__init__ - A
+    M 11:4 Collide.sprite_group_collision - A
+Pybranch/core/dot_creator.py
+    C 8:0 DotCreator - A
+    M 20:4 DotCreator.dot_creator - A
+    M 9:4 DotCreator.__init__ - A
+Pybranch/core/move.py
+    M 15:4 Move.move - A
+    C 7:0 Move - A
+    M 8:4 Move.__init__ - A
+Pybranch/core/game.py
+    M 37:4 Game.is_it_over - A
+    C 10:0 Game - A
+    M 52:4 Game.game_over - A
+    M 11:4 Game.__init__ - A
+    M 24:4 Game.run - A
+Pybranch/gui/game_scene.py
+    C 11:0 GameScene - A
+    M 12:4 GameScene.__init__ - A
+    M 32:4 GameScene.starting_map - A
+    M 41:4 GameScene.game_scene - A
+    M 53:4 GameScene.game_over_scene - A
+Pybranch/gui/screen.py
+    C 8:0 Screen - A
+    M 9:4 Screen.__init__ - A
+    M 19:4 Screen.starting_window_creation - A
+
+*****************************************************************************
+Maintainability Index:
+
+Pybranch/run.py - A
+Pybranch/test/map_test.py - A
+Pybranch/core/dot_creation.py - A
+Pybranch/core/screen_elements.py - A
+Pybranch/core/screen_border_checking.py - A
+Pybranch/core/sprite_draw.py - A
+Pybranch/core/score.py - A
+Pybranch/core/dot_sprite.py - A
+Pybranch/core/game_time.py - A
+Pybranch/core/border_wall.py - A
+Pybranch/core/create_wall.py - A
+Pybranch/core/list.py - A
+Pybranch/core/surface.py - A
+Pybranch/core/pacman_sprite.py - A
+Pybranch/core/inner_wall.py - A
+Pybranch/core/wall_sprite.py - A
+Pybranch/core/collide.py - A
+Pybranch/core/dot_creator.py - A
+Pybranch/core/move.py - A
+Pybranch/core/game.py - A
+Pybranch/gui/game_scene.py - A
+Pybranch/gui/screen.py - A
